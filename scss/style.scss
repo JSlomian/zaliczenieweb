@@ -1,0 +1,285 @@
+:root {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  /*font-size: 87.5%;*/
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+}
+
+#home {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 0;
+  max-width: 1140px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+#home h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  /*letter-spacing: 0.1em;*/
+}
+
+#home h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#home nav li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  height: 48px;
+  padding: 16px;
+  box-sizing: border-box;
+  border-bottom: 2px solid transparent;
+}
+
+#home nav li a:hover {
+  border-color: #fff;
+  transition: 0.3s ease-out;
+}
+
+#js-menu {
+  display: none;
+}
+
+#js-toggle-menu {
+  font-size: 48px;
+  overflow: hidden;
+  width: 48px;
+  height: 48px;
+}
+
+#js-menu.visible {
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #023;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+#js-menu.visible li {
+  border-bottom: 1px solid #999;
+}
+
+#js-menu.visible li:last-child {
+  box-shadow: 0 5px 5px #ccc;
+}
+
+@media (min-width: 768px) {
+  #js-toggle-menu {
+    display: none;
+  }
+
+  #js-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .basic-info {
+    width: 35% !important;
+  }
+
+  .additional-info {
+    width: 65% !important;
+  }
+
+  main {
+    background: linear-gradient(to right, #023 35%, #fff 35%);
+    box-sizing: border-box;
+    max-width: 1140px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 5px 5px #999;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-bottom: 2em;
+  }
+  main {
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  main div {
+    width: 100%;
+    padding-left: 10px;
+  }
+  main > div {
+    background: #023;
+  }
+
+  #basic-profile {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column !important;
+    background-color: #7de;
+  }
+
+  .additional-info {
+    background-color: #fff;
+  }
+}
+
+#home:before {
+  left: 50%;
+  position: absolute;
+  content: "";
+  width: 100vw;
+  margin-left: -50vw;
+  height: 100%;
+  background-color: #023;
+  z-index: -1;
+}
+
+#basic-profile {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: #7de;
+}
+
+#basic-profile .personal-info {
+  width: 70%;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+#basic-profile .personal-info h1 {
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+#basic-profile .personal-info .first-name {
+  font-size: 3rem;
+  color: white;
+}
+
+#basic-profile .personal-info .last-name {
+  font-size: 4.5rem;
+  border-bottom: 1px solid white;
+}
+
+#basic-profile .personal-info .tagline {
+  font-size: 2rem;
+  letter-spacing: 0.25em;
+}
+
+#basic-profile .profile-image {
+  width: 30%;
+  height: auto;
+}
+
+.basic-info {
+  color: white;
+  width: 100%;
+}
+
+.basic-info a {
+  padding: 2px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.additional-info {
+  width: 100%;
+  color: #000;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  min-height: 2em;
+  background: #023;
+  color: #fff;
+}
+
+#footer-content {
+  display: block;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+}
+
+button {
+  all: unset;
+  font-weight: bold;
+  color: #fff;
+  border: 1px solid #666;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+button:hover {
+  all: unset;
+  font-weight: bold;
+  color: #023;
+  background-color: #eee;
+  border: 1px solid #eee;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+#privacy-policy {
+  cursor: pointer;
+  text-align: center;
+}
+
+#privacy-policy-box {
+  padding: 0.25em;
+  display: none;
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: left;
+}

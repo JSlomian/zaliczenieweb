@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="description" content="To jest opis..." />
+    <title>Curriculum Vitae</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <header id="home">
+        <h1>
+            <a href="#home" title="Home">Curriculum Vitae</a>
+        </h1>
+        <nav>
+            <button id="js-toggle-menu" class="mdi mdi-menu"></button>
+            <ul id="js-menu">
+                <li>
+                    <a href="#contact" title="Kontakt"><span>Kontakt</span></a>
+                </li>
+                <li><a href="#experience" title="Doświadczenie">Doświadczenie</a></li>
+                <li><a href="#education" title="Edukacja">Edukacja</a></li>
+                <li><a href="#other" title="Pozostałe">Pozostałe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <header id="basic-profile">
+            <div class="personal-info">
+                <h1>
+                    <span class="first-name">Jan</span>
+                    <span class="last-name">Słomian</span>
+                </h1>
+                <p class="tagline">Something clever</p>
+            </div>
+            <picture class="profile-image">
+                <source srcset="/img/profile.png
+                        /img/profile@2x.png 2x" />
+                <img src="/img/profile.png" width="310" height="310" alt="Zdjęcie profilowe" />
+            </picture>
+        </header>
+
+        <div class="basic-info">
+            <section id="contact">
+                <header>
+                    <h1>Dane kontaktowe</h1>
+                </header>
+                <ul style="list-style: none">
+                    <li>
+                        <span class="mdi mdi-phone"></span>
+                        <a href="tel:+48733846914" title="Zadzwoń">+48 733 846 914</a>
+                    </li>
+                    <li>
+                        <span class="mdi mdi-email"></span>
+                        <a href="mailto:jslomian@multiprojekt.pl" title="Wyślij e-mail">jslomian@multiprojekt.pl</a>
+                    </li>
+                </ul>
+            </section>
+            <section id="skills">
+                <header>
+                    <h1>Umiejętności</h1>
+                </header>
+                <ul style="list-style: none">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>PHP</li>
+                    <ul>
+                        <li>Symfony</li>
+                        <li>Laravel</li>
+                    </ul>
+                    <li>JS</li>
+                    <ul>
+                        <li>Vue</li>
+                        <li>React</li>
+                        <li>JQuery</li>
+                    </ul>
+                    <li>Python</li>
+                    <ul>
+                        <li>Django</li>
+                    </ul>
+                    <li>C/C++/C#</li>
+                </ul>
+            </section>
+            <section id="about">
+                <header>
+                    <h1>O mnie</h1>
+                </header>
+                <p style="padding: 0 5px">Jestem Janek, pracuję jako web dev i studiuję na Akademii Pomorskiej.
+                    Kiedy byłem mały myślałem, że jak dorosnę to nikt mi nie będzie mówić co mam robić
+                    i będe mógł grać w gry. Teraz nawet jak mam wolny czas to nie chce mi się grać.
+                </p>
+            </section>
+        </div>
+
+        <div class="additional-info">
+            <section id="experience">
+                <header>
+                    <h1>Doświadczenie zawodowe</h1>
+                </header>
+                <ul>
+                    <li>Junior Developer PHP - Multiprojekt</li>
+                </ul>
+            </section>
+
+            <section id="education">
+                <header>
+                    <h1>Edukacja</h1>
+                </header>
+                <ul>
+                    <li>Zespół Szkół Informatycznych w Słupsku</li>
+                    <li>Akademia Pomorska</li>
+                </ul>
+            </section>
+
+            <section id="other">
+                <header>
+                    <h1>Dodatkowe umiejętności</h1>
+                </header>
+                <ul>
+                    <li>Gra na gitarze</li>
+                    <li>Gra na nerwach</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div id="privacy-policy-box">
+            <p>Jakiś długi tekst o polityce prywatności, który trzeba zaakceptować ponieważ ktoś nie zrozumiał czym są
+                cookies i teraz każda strona ma denerwujący popup</p>
+            <span style="padding: 5px">
+                <button type="button" id="privacy-policy">
+                    Akceptuję politykę prywatności
+                </button>
+            </span>
+        </div>
+        <div id="footer-content">Copyright &copy; <span id="year"> </span>&nbsp;- Jan Słomian</div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
